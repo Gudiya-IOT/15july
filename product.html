@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        .box{
+            width: 300px;
+            height: 400px;
+            /* border: 1px solid black; */
+            box-shadow: 0px 0px 10px rgb(180, 179, 179);
+            padding: 5px;
+            overflow: hidden;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        .content{
+            /* border: 2px solid black; */
+            padding: 10px;
+            font-family: sans-serif;
+            text-align: justify;
+            background-color: white;
+            transition: all 1s;
+        }
+        h1,h2,p{
+            margin: 5px 0px;
+        }
+        .box:hover .content{
+              transform: translateY(-220px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="image1.png" alt="">
+        <div class="content">
+            <h1>Title - Car</h1>
+            <h2>Price - 500</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum unde vero, doloremque sequi at nihil iste? Doloribus distinctio quas quisquam officiis nam perspiciatis animi quam doloremque enim amet! At, minus!</p>
+        </div>
+    </div>
+</body>
+</html>

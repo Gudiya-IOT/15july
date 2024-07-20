@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #fafafa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+      }
+      .phone-images {
+        position: relative;
+        width: 354px;
+        height: 518px;
+        margin-right: 32px;
+        background-image: url("https://www.instagram.com/images/instagram/xig/homepage/screenshots/screenshot4.png?__d=www");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .phone-images::after {
+        content: "";
+        position: absolute;
+        top: 18%;
+        left: 22%;
+        width: 56%;
+        height: 62%;
+        background-image: url("https://www.instagram.com/images/instagram/xig/homepage/screenshots/screenshot2.png?__d=www");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .login-container {
+        width: 350px;
+      }
+      .login-box,
+      .signup-box {
+        background-color: white;
+        border: 1px solid #dbdbdb;
+        padding: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .login-box h1 {
+        font-family: "Billabong", cursive;
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+      .input-box {
+        width: 100%;
+        margin: 10px 0;
+      }
+      .input-box input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        background-color: #fafafa;
+      }
+      .login-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0095f6;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      .login-box p {
+        margin: 20px 0;
+        color: #8e8e8e;
+      }
+      .login-box a {
+        color: #0095f6;
+        text-decoration: none;
+      }
+      .signup-box p {
+        color: #262626;
+      }
+      .app-download {
+        text-align: center;
+        margin: 20px 0;
+      }
+      .app-download img {
+        width: 136px;
+        height: 40px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="phone-images"><img class="phone-images" src="image3.png" alt="" /></div>
+      <div class="login-container">
+        <div class="login-box">
+          <h1>
+            <i
+              data-visualcompletion="css-img"
+              aria-label="Instagram"
+              class=""
+              role="img"
+              style="
+                background-image: url('https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png');
+                background-position: 0px -52px;
+                background-size: auto;
+                width: 175px;
+                height: 51px;
+                background-repeat: no-repeat;
+                display: inline-block;
+              "
+            ></i>
+          </h1>
+          <div class="input-box">
+            <input type="text" placeholder="Phone number, username, or email" />
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button class="login-button">Log In</button>
+          <p>OR</p>
+          <a class href="#"><span class="_a04s _ab36"></span>Log in with Facebook</a>
+          <p><a href="#">Forgot password?</a></p>
+        </div>
+        <div class="signup-box">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+        <div class="app-download">
+          <p>Get the app</p>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.instagram.android"
+          >
+            <img
+              src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+              alt="Google Play Store"
+            />
+          </a>
+          <a href="https://apps.apple.com/us/app/instagram/id389801252">
+            <img
+              src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png"
+              alt="App Store"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

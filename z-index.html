@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+         *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+            }
+            body{
+                display:flex ;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+            }
+    .box{
+        height: 500px;
+        width: 500px;
+        border: 2px solid black;
+        text-align: justify;
+        background-color: white;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+    .inner-item{
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        position: absolute;
+    }
+    .inner-item:nth-child(1){
+        background-color: pink;
+        top:0px;
+        z-index: 2;
+    }
+    .inner-item:nth-child(2){
+        background-color: green;
+        left:0px;
+        z-index: 1;
+    }
+    .inner-item:nth-child(3){
+        background-color: red;
+        right:0px;
+        z-index: 1;
+    }
+    .inner-item:nth-child(4){
+        background-color: yellow;
+        bottom:0px;
+        z-index: 1;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+        <div class="inner-item"></div>
+    </div>
+</body>
+</html>
